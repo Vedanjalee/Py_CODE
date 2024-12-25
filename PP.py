@@ -56,3 +56,26 @@
 #         if arr[j]  > arr[j+1]:
 #            arr[j+1],arr[j] = arr[j], arr[j+1]
 # print(arr)
+
+def merge_sort(arr):
+    if len(arr) <= 1:
+        return arr 
+    mid = len(arr) // 2
+    l  = merge_sort(arr[:mid])
+    r = merge_sort(arr[mid:])
+    
+    i =j =0
+    result =[]
+
+    while i<len(l) and j<len(r):
+        if l[i] <= r[j]:
+            result.append(l[i])
+            i += 1
+        else:
+            result.append(r[j])
+            j += 1
+    result.extend(l[i:]) 
+    result.extend(r[j:])
+    return result
+arr=[31,6,4,8,5]     
+print(merge_sort(arr))      
