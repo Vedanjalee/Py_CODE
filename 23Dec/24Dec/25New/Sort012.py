@@ -22,7 +22,7 @@ def sort_012(arr):
 arr =[0,1,2,0,1,2]
 arr = sort_012(arr) 
 
-for x in arr:
-    print(x, end =" ")
+for i in arr:
+    print(i, end =" ")
 
             

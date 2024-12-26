@@ -14,7 +14,6 @@ def print_list(head):
         current = current.next
     print("None")
 
-
 head = Node(10)
 node2 = Node(20)
 node3 = Node(30)
@@ -22,8 +21,6 @@ node3 = Node(30)
 head.next = node2 
 node2.next = node3 
 
-
 print_list(head)
-
 head =  insert_at_beginning(head, 5)
 print_list(head)
