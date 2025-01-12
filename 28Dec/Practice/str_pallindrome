@@ -1,0 +1,7 @@
+pall = "madam"
+n=len(pall)-1
+for i in range(n//2):
+    if pall[i] != pall[n-i]:
+        print("not pallindrome")
+    else:
+        print(" pallindrome")    
