@@ -1,22 +1,19 @@
-// Deep copy code
+package jan_20;
+class Delta{
+    int a  ;
+    double d;
+    String s ;
 
-package Jan_16;
 
-class Score 
-    {
-        int x  = 30 ;
+
+}
+
+public class MainClass2 {
+    public static void main(String[] args) {
+        Delta obj = new Delta() ;
+        System.out.println(obj.a);
+        System.out.println(obj.d);
+        System.out.println(obj.s);
+
     }
-
-
-    public class MainClass2  {
-        public static void main(String[] args) {
-            
-            Score s1 = new Score();
-            Score s2 =new Score();
-    
-            s2.x = 6 ;
-    
-            System.out.println("The value of x is: " + s1.x);  
-    
-        }
-    }
+}

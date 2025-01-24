@@ -1,18 +1,47 @@
-// SHALLOW COPY CODE 
-package Jan_16;
-class Score 
-{
-    int x  = 30 ;
-}
-public class MainClass1 {
-    public static void main(String[] args) {
-        
-        Score s1 = new Score();
-        Score s2 = s1;
+import java.util.Scanner;
 
-        s2.x = 6 ;
-
-        System.out.println("The value of x is: " + s1.x);  
-
+class Biryani {
+    String type ;
+    double price ;
+    
+    Biryani(String type, double price){
+        this.type = type;
+        this.price = price ;
     }
 }
+
+class BiryaniHelper {
+    static void displayBiryani(Biryani b)
+    {
+        System.out.println("price : ");
+    }
+    static Biryani createBiryani() 
+{
+    Scanner scn = new Scanner(System.in);
+    System.out.println("enter Price");
+    double price = scn.nextDouble();
+    System.out.println("enter type");
+
+    String type = scn.next();
+    Biryani b = new Biryani(type, price);
+    return b ;
+
+}
+}    
+
+
+
+
+    public class MainClass1 {
+        public static void main(String[] args) {
+            Biryani b1 = BiryaniHelper.createBiryani();
+            BiryaniHelper.displayBiryani(b1);
+            
+
+            Biryani b2 = BiryaniHelper.createBiryani();
+            BiryaniHelper.displayBiryani(b2);
+
+            Biryani b3 = BiryaniHelper.createBiryani();
+            BiryaniHelper.displayBiryani(b3);
+
+}}
