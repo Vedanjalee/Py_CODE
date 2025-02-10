@@ -8,7 +8,7 @@ def remove_consecutive_char(A,B):
 
         while i<n  :
             count = 1
-            while i +count < n and A[i+ count]:
+            while i +count < n and A[i] == A[i+ count]:
                 count += 1
 
 
