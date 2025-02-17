@@ -8,7 +8,6 @@ class Node :
 
 
 def preorder(root, arr) :
-
     if not root: 
         return 
     
