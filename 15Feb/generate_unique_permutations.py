@@ -1,4 +1,4 @@
-def generate_unique_permutations(s, curr_perm = "", used = set()):
+def generate_unique_permutations(s, curr_permu = "", used = set()):
     if len(curr_permu) == len(s) :
         print(curr_permu)
         return 
